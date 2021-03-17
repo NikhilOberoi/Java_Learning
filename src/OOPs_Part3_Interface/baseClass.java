@@ -9,12 +9,12 @@ public class baseClass extends bsuperClass implements backend {
 
 	// non Static Method Overriding the bSuperClass Method
 	public void closeServer() {
-		System.out.println("closeServer Method of bSuperClass Override in Base Class");
+		System.out.println("------------closeServer Method of bSuperClass Override in Base Class");
 	}
 
 	// Achieving Multiple Inheritance by calling typeOne() Method
 	public void multiInheritance() {
-		System.out.println("this is the type one to execute the default type method implemented in Interface");
+		System.out.println("this is the type one to execute the default type method implemented in Interface\n");
 		backend.super.typeOne();
 	}
 
