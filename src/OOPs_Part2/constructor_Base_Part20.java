@@ -8,7 +8,7 @@ public class constructor_Base_Part20 extends constructor_Part20 {
 	}
 	
 	constructor_Base_Part20(int a){
-		this(); // this will call default constructor of Base Class
+		this(); // this will call default c onstructor of Base Class
 		System.out.println("Base Class Constructor with one argument");
 	}
 	
@@ -17,3 +17,6 @@ public class constructor_Base_Part20 extends constructor_Part20 {
 		constructor_Base_Part20 cp1 = new constructor_Base_Part20(34);
 	}
 }
+
+// Point to Not:
+// 1. Constructors can't be abstract, final, Static and Synchronized while method can be

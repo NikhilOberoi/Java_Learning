@@ -33,7 +33,7 @@ public class wrapper_Classes_Part_11 {
 		boolean c = Boolean.parseBoolean(d);// for String true/TRUE/True it gives true
 		System.out.println(c);
 		d= "Some other string";
-		c= Boolean.getBoolean(d);// for other String ig gives false
+		c= Boolean.getBoolean(d);// for other String it gives false
 		System.out.println(c);
 		
 	}

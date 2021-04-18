@@ -3,7 +3,7 @@ package OOPs_Part3_Interface;
 public interface backend {
 
 	public void connectServer();
-
+	public void closeServer();
 	public default void typeOne() {
 		System.out.println("This is the type One of Implementing methods in Interface");
 	}
@@ -15,5 +15,5 @@ public interface backend {
 	public static void executer() {
 		System.out.println("Executer method implemented in backend interface");
 	}
-
-}
+//	 public void test();
+} 

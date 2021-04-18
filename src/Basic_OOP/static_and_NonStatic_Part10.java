@@ -11,12 +11,12 @@ public class static_and_NonStatic_Part10 {
 		
 		System.out.println("Static Global Variable :"+J);// can access directly
 		System.out.println("Static Global Variable through class Object :"+call.J);// Static Variable can also be call through object ref.
-		System.out.println("Non-Static Method :"+call.K);// can access through class object reference only.
+		System.out.println("Non-Static Method :"+call.K);// in static method non-static veriable can access through class object reference only.
 		
 		//Calling static methods:
 		multi(10,5);
 		System.out.println("string method return :"+string("This is me"));
-	
+		
 	}
 	// Static Method:
 	public static void multi(int i, int j){
@@ -25,6 +25,14 @@ public class static_and_NonStatic_Part10 {
 	
 	public static String string (String text){ // non-void method..
 		return text;
+	}
+	// non static method
+	public void test() {
+		System.out.println(K);// in non-static method, non-static variable can access directly (without class object ref.)
+	}
+	
+	public void test1() {
+		System.out.println(J);// in non-static method, static variable can access directly (without class object ref.)
 	}
 	
 }

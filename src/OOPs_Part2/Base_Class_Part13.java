@@ -8,6 +8,7 @@ public class Base_Class_Part13 extends Super_Class_Part13{ // we can't extends m
 		SC.start(); // It will call start() method from Base Class - as non static method override
 //		SC.test(); //  Throws error as super Class Object ref. belong to methods those are only available in Super Class
 		
+		System.out.println("Base Class Object Refrences Results:\n");
 		Base_Class_Part13 BC = new Base_Class_Part13();
 		BC.stop(); // It will call stop() method from Base class as object reference belongs to Base class
 		BC.start();// It will call start() method from Base Class - as non static method override.
@@ -19,12 +20,16 @@ public class Base_Class_Part13 extends Super_Class_Part13{ // we can't extends m
 	}
 	
 	public void start(){ // Super_Class Method Override
-		System.out.println("Non Static Start Method of Base Class");
+		System.out.println("Non Static Start Method of Base Class-------");
 	}
 	
 	public void test(){
 		start();
 	}
+	
+//	public void check(int b) { // the override method should have same return type
+//		
+//	}
 	
 	public void models(String model_Name, int model_Year){// overloading super class method in base class
 		System.out.println("models() method of Base class with two Parameters");

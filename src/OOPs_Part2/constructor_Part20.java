@@ -13,7 +13,7 @@ public class constructor_Part20 {
 		System.out.println("Default Constructor with no arguments");
 	}
 	
-	public constructor_Part20(String a){
+	public constructor_Part20(String a){ //overload constructor
 		System.out.println("constructor with an argument having String type and value :"+a);
 	}
 	
@@ -21,7 +21,7 @@ public class constructor_Part20 {
 		System.out.println("Display Method");
 	}
 	
-	constructor_Part20(String student_Name, int rollno){
+	constructor_Part20(String student_Name, int rollno){ // Overload Constructor
 		System.out.println("Student Name is: "+student_Name+" having Roll Number: "+rollno+" and College Name is: "+college);
 		
 	}
